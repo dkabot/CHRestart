@@ -1,0 +1,8 @@
+This plugin is intended for CubedHost servers, to allow restarting from in-game.
+You will need to configure it with your Prisma API key, login email, and server ID before use.
+
+The `reboot` command is intended to be as much of a drop-in replacement for Spigot's `restart` command as possible.
+It uses the same permissions, so anyone who already has these permissions can run it without further permissions assignment.
+
+Unfortunately, this plugin cannot automatically override the `restart` command, but you can configure this manually.
+Take a look at the file `commands.sample.yml` for an example `commands.yml` configuration to allow restarting with `restart`.

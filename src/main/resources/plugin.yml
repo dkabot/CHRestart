@@ -1,0 +1,26 @@
+  name: CHRestart
+  main: moe.naomi.CHRestart.CHRestart
+  version: 1.0
+  author: 0xNaomi
+  website: https://cubedhost.com
+  description: Server restart command for CubedHost servers
+  api-version: 1.13
+  commands:
+      chrestart:
+          description: Main CHRestart command.
+          permission: chrestart.command
+          usage: /<command> [reload]
+      reboot:
+          description: Attempt to restart the server.
+          permission: bukkit.command.restart
+          usage: /<command>
+  permissions:
+      bukkit.command.restart:
+          description: Grants access to the reboot command.
+          default: op
+      chrestart.command:
+          description: Grants access to the chrestart command.
+          default: op
+      chrestart.command.reload:
+          description: Allows use of chrestart reload sub-command.
+          default: op
